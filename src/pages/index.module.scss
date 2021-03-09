@@ -1,0 +1,89 @@
+@import '../scss/media';
+
+.content {
+  text-align: center;
+}
+
+.title {
+  margin: 60px 0;
+  font-size: 40px;
+
+  @include mediaSm() {
+    font-size: 30px;
+    margin: 40px 0;
+  }
+
+  @include mediaZr() {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.itemLink {
+  margin: 0 0 30px;
+
+  @include mediaSm() {
+    margin: 0 0 20px;
+  }
+
+  @include mediaZr() {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 40px;
+  margin: 0 15px;
+
+  @include mediaSm() {
+    font-size: 30px;
+    margin: 0 12px;
+    width: 160px;
+    height: 80px;
+  }
+
+  @include mediaZr() {
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+  }
+}
+
+.type1 {
+  background: rgba(34, 127, 184, 0.5);
+}
+
+.type2 {
+  background: rgba(34, 127, 184, 0.75);
+}
+
+.type3 {
+  background: rgba(34, 127, 184, 1);
+}
+
+.type4 {
+  background: #FC6B58;
+}
+
+.type5 {
+  background: #FB0C4D;
+}

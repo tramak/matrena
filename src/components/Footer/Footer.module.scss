@@ -1,0 +1,65 @@
+@import '../../scss/media';
+
+.footer {
+  background: #333333;
+  color: #FFFFFF;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.footerContent {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include mediaZr() {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.logoBlock {
+  float: left;
+  margin: 10px 0;
+
+  @include mediaEx() {
+    margin: 10px 100px 0 0;
+  }
+
+  @include mediaLg() {
+    margin: 10px 100px 0 0;
+  }
+
+  @include mediaMd() {
+    margin: 10px 50px 0 0;
+  }
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.nav {
+  margin: 0 10px 10px;
+}
+
+.link {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 22px;
+  text-decoration: none;
+
+  h2 & {
+    font-size: 14px;
+  }
+}
+
+.textItem {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 22px;
+  text-decoration: none;
+}
