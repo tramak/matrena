@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   font-family: "Source Serif Pro";
+  background: #F2F2F2;
 }
 
 input {
@@ -33,10 +34,21 @@ ul {
   width: 100%;
 }
 
-.container {
+.containerEx {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @include mediaZr() {
+    padding: 0 10px;
+  }
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 
   @include mediaZr() {
     padding: 0 10px;

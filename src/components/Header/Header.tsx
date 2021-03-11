@@ -8,7 +8,7 @@ import { Search } from "./Search";
 export const Header: React.FC = () => {
   return (
     <div className={styles.header}>
-      <div className="container">
+      <div className="containerEx">
         <div className={styles.headerContent}>
           <div className={styles.left}>
             <img className={styles.logo} src={logo} alt="logo" />

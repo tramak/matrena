@@ -12,27 +12,27 @@ const IndexPage: React.FC = () => {
 
       <ul className={styles.list}>
         <li className={styles.itemLink}>
-          <Link to="/" className={classNames(styles.link, styles.type1)}>
+          <Link to="/topics" className={classNames(styles.link, styles.type1)}>
             7 класс
           </Link>
         </li>
         <li className={styles.itemLink}>
-          <Link to="/" className={classNames(styles.link, styles.type2)}>
+          <Link to="/topics" className={classNames(styles.link, styles.type2)}>
             8 класс
           </Link>
         </li>
         <li className={styles.itemLink}>
-          <Link to="/" className={classNames(styles.link, styles.type3)}>
+          <Link to="/topics" className={classNames(styles.link, styles.type3)}>
             9 класс
           </Link>
         </li>
         <li className={styles.itemLink}>
-          <Link to="/" className={classNames(styles.link, styles.type4)}>
+          <Link to="/topics" className={classNames(styles.link, styles.type4)}>
             ОГЭ
           </Link>
         </li>
         <li className={styles.itemLink}>
-          <Link to="/" className={classNames(styles.link, styles.type5)}>
+          <Link to="/topics" className={classNames(styles.link, styles.type5)}>
             ЕГЭ
           </Link>
         </li>
