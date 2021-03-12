@@ -11,14 +11,17 @@ const TopicListPage: React.FC = () => {
     <div className="container">
       <div className={styles.back}>
         <Link to="/" className={styles.backLink}>
-          <ArrowLeftOutlined /> Назад
+          <ArrowLeftOutlined className={styles.arrow} /> Назад
         </Link>
       </div>
 
       <div className={styles.header}>
+        <span className={styles.headerSpacer} />
         <h1 className={styles.title}>8 класс</h1>
-        <div className={styles.select}>
-          К другим тренингам
+        <div className={styles.selectWrap}>
+          <div className={styles.select}>
+            К другим тренингам
+          </div>
         </div>
       </div>
 

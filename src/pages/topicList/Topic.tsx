@@ -4,16 +4,17 @@ import DownOutlined from '@ant-design/icons/DownOutlined';
 
 import styles from './topic.module.scss';
 import TaskLearner from "./TaskLearner";
+import TaskTeacher from "./TaskTeacher";
 
 const Topic: React.FC = () => {
   const listRef = useRef<HTMLDivElement>(null);
   const [isOpen, setOpen] = useState(false);
-  const [height, setHeight] = useState(0);
+  // const [height, setHeight] = useState(0);
 
-  useEffect(() => {
-    if (!listRef?.current) return;
-    setHeight(isOpen ? listRef.current.offsetHeight : 0);
-  }, [isOpen, listRef]);
+  // useEffect(() => {
+  //   if (!listRef?.current) return;
+  //   setHeight(isOpen ? listRef.current.offsetHeight : 0);
+  // }, [isOpen, listRef]);
 
   return (
     // <li className={classNames(styles.topic)}>
@@ -29,16 +30,15 @@ const Topic: React.FC = () => {
           <DownOutlined />
         </div>
       </div>
-      <div className={styles.body} style={{
-        height
-      }}>
+      {/*<div className={styles.body} style={{ height }}>*/}
+      <div className={styles.body}>
         <div className={styles.list} ref={listRef}>
           <TaskLearner />
+          <TaskTeacher />
           <TaskLearner />
+          <TaskTeacher />
           <TaskLearner />
-          <TaskLearner />
-          <TaskLearner />
-          <TaskLearner />
+          <TaskTeacher />
         </div>
       </div>
     </li>

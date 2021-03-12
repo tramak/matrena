@@ -1,3 +1,5 @@
+@import '../../scss/media';
+
 .topic {
   background: #FFFFFF;
   border-radius: 20px;
@@ -47,13 +49,20 @@
   background: #FFFFFF;
   overflow: hidden;
   height: 0;
-  transition: height 0.3s ease;
+  //transition: height 0.3s ease;
+  .topicOpen & {
+    height: 100%;
+  }
 }
 
 .list {
-  padding: 10px 10px 0;
+  padding: 10px 12px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
+
+  @include media($screenSm, $screenLg) {
+    justify-content: space-around;
+  }
 }
