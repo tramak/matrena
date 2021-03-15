@@ -1,6 +1,8 @@
 import React from 'react';
 import Back from '../components/Back/Back';
 import styles from './teacherOffice.module.scss';
+import Classroom from "../components/Classroom/Classroom";
+import ClassroomEdit from "../components/ClassroomEdit/ClassroomEdit";
 
 const TeacherOffice = () => {
   return (
@@ -14,6 +16,10 @@ const TeacherOffice = () => {
           Добавить класс
         </button>
       </div>
+
+      <ClassroomEdit />
+
+      <Classroom />
 
       <div className={styles.empty}>
         Здесь появятся классы после того, как вы их добавите

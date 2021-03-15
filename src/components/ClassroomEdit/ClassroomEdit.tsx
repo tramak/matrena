@@ -1,23 +1,18 @@
 import React from 'react';
-import UserOutlined from '@ant-design/icons/UserOutlined';
-import LinkOutlined from '@ant-design/icons/LinkOutlined';
-import ApiOutlined from '@ant-design/icons/ApiOutlined';
-import styles from './classroom.module.scss';
+import EditOutlined from '@ant-design/icons/EditOutlined';
+import styles from './СlassroomEdit.module.scss';
 import StudentListEdit from '../StudentListEdit/StudentListEdit';
+import UserOutlined from "@ant-design/icons/UserOutlined";
+import ApiOutlined from "@ant-design/icons/ApiOutlined";
+import StudentList from "../StudentList/StudentList";
 
-const Classroom: React.FC = () => {
+const ClassroomEdit: React.FC = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.head}>
-        {false ? (
-          <h2 className={styles.title}>
-            8А класс, школа 234
-          </h2>
-        ): (
-          <div className={styles.titleEdit} contentEditable={true}>
-            8А класс, школа 234
-          </div>
-        )}
+        <div className={styles.titleEdit} contentEditable={true}>
+          8А класс, школа 234
+        </div>
         <div className={styles.hButtons}>
           <button className={styles.hButton}>
             Отмена
@@ -49,4 +44,4 @@ const Classroom: React.FC = () => {
   );
 };
 
-export default Classroom;
+export default ClassroomEdit;

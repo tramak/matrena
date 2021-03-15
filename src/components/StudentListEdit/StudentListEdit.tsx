@@ -1,21 +1,36 @@
 import React from 'react';
 import DragOutlined from '@ant-design/icons/DragOutlined';
-import styles from './StudentList.module.scss';
+import styles from './StudentListEdit.module.scss';
 
-const StudentList: React.FC = () => {
+const StudentListEdit: React.FC = () => {
+  const fioList = [
+    {
+      firstName: 'Иванов',
+      lastName: 'Андрей'
+    },
+    {
+      firstName: 'Иванов',
+      lastName: 'Андрей'
+    },
+    {
+      firstName: 'Иванов',
+      lastName: 'Андрей'
+    }
+  ];
+
   return (
     <div className={styles.tableWrap}>
       <table className={styles.table}>
         <thead>
-          <tr>
-            <th className={styles.drag} />
-            <th className={styles.name}>Фамилия</th>
-            <th className={styles.name}>Имя</th>
-            <th className={styles.name}>Отчество</th>
-            <th className={styles.name}>Моб. телефон</th>
-            <th className={styles.name}>E-mail</th>
-            <th className={styles.name}>ID</th>
-          </tr>
+        <tr>
+          <th className={styles.drag} />
+          <th className={styles.name}>Фамилия</th>
+          <th className={styles.name}>Имя</th>
+          <th className={styles.name}>Отчество</th>
+          <th className={styles.name}>Моб. телефон</th>
+          <th className={styles.name}>E-mail</th>
+          <th className={styles.name}>ID</th>
+        </tr>
         </thead>
         <tbody>
         {
@@ -53,4 +68,4 @@ const StudentList: React.FC = () => {
   )
 };
 
-export default StudentList;
+export default StudentListEdit;
