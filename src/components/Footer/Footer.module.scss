@@ -5,6 +5,19 @@
   color: #FFFFFF;
   flex: 0 0 auto;
   width: 100%;
+  margin-top: 60px;
+
+  @include mediaMd {
+    margin-top: 40px;
+  }
+
+  @include mediaSm {
+    margin-top: 30px;
+  }
+
+  @include mediaZr() {
+    margin-top: 20px;
+  }
 }
 
 .footerContent {

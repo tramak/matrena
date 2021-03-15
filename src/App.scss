@@ -58,3 +58,23 @@ ul {
     padding: 0 10px;
   }
 }
+
+.mainTitle {
+  margin-top: 18px;
+  font-size: 40px;
+  text-align: center;
+
+  @include mediaMd() {
+    font-size: 35px;
+  }
+
+  @include mediaSm() {
+    font-size: 30px;
+  }
+
+  @include mediaZr() {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+

@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import classNames from 'classnames';
-import ArrowLeftOutlined from '@ant-design/icons/ArrowLeftOutlined';
+import Back from '../components/Back/Back';
 
 import Topic from './topicList/Topic';
 import styles from './topicList.module.scss';
@@ -9,11 +7,7 @@ import styles from './topicList.module.scss';
 const TopicListPage: React.FC = () => {
   return (
     <div className="container">
-      <div className={styles.back}>
-        <Link to="/" className={styles.backLink}>
-          <ArrowLeftOutlined className={styles.arrow} /> Назад
-        </Link>
-      </div>
+      <Back url="/" />
 
       <div className={styles.header}>
         <span className={styles.headerSpacer} />
