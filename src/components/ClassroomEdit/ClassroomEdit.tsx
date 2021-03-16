@@ -1,16 +1,14 @@
 import React from 'react';
-import EditOutlined from '@ant-design/icons/EditOutlined';
 import styles from './СlassroomEdit.module.scss';
 import StudentListEdit from '../StudentListEdit/StudentListEdit';
 import UserOutlined from "@ant-design/icons/UserOutlined";
 import ApiOutlined from "@ant-design/icons/ApiOutlined";
-import StudentList from "../StudentList/StudentList";
 
 const ClassroomEdit: React.FC = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.head}>
-        <div className={styles.titleEdit} contentEditable={true}>
+        <div className={styles.titleEdit} contentEditable={true} suppressContentEditableWarning={true}>
           8А класс, школа 234
         </div>
         <div className={styles.hButtons}>

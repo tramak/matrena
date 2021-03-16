@@ -3,21 +3,6 @@ import DragOutlined from '@ant-design/icons/DragOutlined';
 import styles from './StudentListEdit.module.scss';
 
 const StudentListEdit: React.FC = () => {
-  const fioList = [
-    {
-      firstName: 'Иванов',
-      lastName: 'Андрей'
-    },
-    {
-      firstName: 'Иванов',
-      lastName: 'Андрей'
-    },
-    {
-      firstName: 'Иванов',
-      lastName: 'Андрей'
-    }
-  ];
-
   return (
     <div className={styles.tableWrap}>
       <table className={styles.table}>
@@ -36,7 +21,7 @@ const StudentListEdit: React.FC = () => {
         {
           [0, 1, 2, 3, 4].map(item => {
             return (
-              <tr>
+              <tr key={item}>
                 <td className={styles.drag}>
                   <DragOutlined />
                 </td>

@@ -1,11 +1,7 @@
 import React from 'react';
-import UserOutlined from '@ant-design/icons/UserOutlined';
-import LinkOutlined from '@ant-design/icons/LinkOutlined';
-import ApiOutlined from '@ant-design/icons/ApiOutlined';
 import styles from './Classroom.module.scss';
 import StudentList from '../StudentList/StudentList';
 import EditOutlined from "@ant-design/icons/EditOutlined";
-import StudentListEdit from "../StudentListEdit/StudentListEdit";
 
 const Classroom: React.FC = () => {
   return (
@@ -15,13 +11,10 @@ const Classroom: React.FC = () => {
           8А класс, школа 234
         </h2>
         <div className={styles.hButton}>
-          <EditOutlined /> Редактировать класс
+          <EditOutlined />
+          <span className={styles.hButtonText}>Редактировать класс</span>
         </div>
       </div>
-
-      <h3 className={styles.desc}>
-        Ученики
-      </h3>
 
       <StudentList />
     </div>

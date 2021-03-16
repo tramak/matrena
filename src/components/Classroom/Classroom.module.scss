@@ -11,10 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  @include media(0, $screenMd) {
-    flex-direction: column;
-  }
 }
 
 .title {
@@ -37,7 +33,9 @@
   }
 }
 
-.desc {
-  margin-top: 30px;
-  font-size: 20px;
+.hButtonText {
+  margin-left: 10px;
+  @include media(0, $screenMd) {
+    display: none;
+  }
 }
